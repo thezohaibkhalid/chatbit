@@ -1,9 +1,10 @@
+import Chats from "./components/chats/Chats"
 const App = () => {
   return (
     <div>
-      <div className="grid grid-cols-4 gap-4 mx-[100px] my-[50px] backdrop-blur-lg">
-        <div className="col-span-1">
-          chats
+      <div className="grid grid-cols-4 gap-4 text-xl ">
+        <div className="col-span-1 ">
+          <Chats/>
         </div>
 
         <div className="col-span-2">
