@@ -4,7 +4,7 @@ import './index.css';
 import App from './App.tsx';
 
 const style = {
-  backgroundImage: "url('https://images.unsplash.com/photo-1487088678257-3a541e6e3922?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
+  backgroundImage: "url('https://media.istockphoto.com/id/1162167657/photo/hand-painted-background-with-mixed-liquid-blue-and-golden-paints-abstract-fluid-acrylic.webp?a=1&b=1&s=612x612&w=0&k=20&c=lnpN1MmAuPG9yB3r5Y9EKrzRIF3siGSK7GZJmipXT14=')",
   backgroundSize: "cover",  
   backgroundPosition: "center",  
   height: "100vh",  
@@ -13,7 +13,7 @@ const style = {
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <div  style={style} className='p-20 '>
-         <div className='w-[90vw] h-[90vh] backdrop:backdrop-blur-xl bg-white/40'>
+         <div className='w-[90vw] h-[90vh] backdrop:backdrop-blur-xl bg-black/40 rounded-lg'>
          <App /> 
         </div>
         
