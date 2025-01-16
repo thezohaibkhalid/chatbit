@@ -81,6 +81,7 @@ const Messages = () => {
     <div className="flex-1 overflow-y-auto scrollbar-thin  scrollbar-thumb-gray-700 scrollbar-track-black/20 p-4">
       <div className="flex flex-col gap-4 ">
         {messages.map((message) => (
+            //error not found
           <div
             key={message.id}
             className={` flex ${message.sender === "user1" ? "justify-start" : "justify-end"}`}
