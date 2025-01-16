@@ -1,22 +1,45 @@
-import Chats from "./components/chats/Chats"
+import Chats from "./components/chats/Chats";
+
 const App = () => {
+  const style = {
+    backgroundImage:
+      "url('https://media.istockphoto.com/id/1162167657/photo/hand-painted-background-with-mixed-liquid-blue-and-golden-paints-abstract-fluid-acrylic.webp?a=1&b=1&s=612x612&w=0&k=20&c=lnpN1MmAuPG9yB3r5Y9EKrzRIF3siGSK7GZJmipXT14=')",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    height: "100vh",
+  };
+
   return (
-    <div>
-      <div className="grid grid-cols-4 gap-4 ">
-        <div className="col-span-1 border-r-2 ">
-          <Chats/>
-        </div>
+    <div
+      style={style}
+      className="flex justify-center items-center h-screen  text-gray-100"
+    >
+      {/* Main Container */}
+      <div className="w-[90vw] h-[90vh] backdrop-blur-lg bg-black/50 rounded-lg shadow-xl overflow-hidden">
+        {/* Main Grid Layout */}
+        <div className="grid grid-cols-4 h-full">
+          {/* Sidebar - Chats */}
+          <div className="col-span-1 border-r border-gray-700">
+            <Chats />
+          </div>
 
-        <div className="col-span-2">
-          chatting
-        </div>
+          {/* Chat Window */}
+          <div className="col-span-2 flex flex-col justify-center items-center bg-gray-800">
+            <h2 className="text-2xl font-semibold mb-2">Chatting Area</h2>
+            <p className="text-gray-400">Select a chat to start messaging...</p>
+          </div>
 
-        <div className="col-span-1">
-          details
+          {/* Details Section */}
+          <div className="col-span-1 bg-gray-900 flex flex-col items-center p-4">
+            <h2 className="text-xl font-semibold mb-4">Details</h2>
+            <p className="text-gray-400 text-center">
+              View user details, activities, and additional information here.
+            </p>
+          </div>
         </div>
       </div>
     </div>
   );
-}
+};
 
 export default App;
