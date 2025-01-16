@@ -1,5 +1,5 @@
-import Chats from "./components/chats/Chats";
-
+import ChatsList from "./components/chats/ChatsList";
+import Chat from "./components/chat/Chat"
 const App = () => {
   const style = {
     backgroundImage:
@@ -20,13 +20,12 @@ const App = () => {
         <div className="grid grid-cols-4 h-full">
           {/* Sidebar - Chats */}
           <div className="col-span-1 border-r border-gray-700">
-            <Chats />
+            <ChatsList />
           </div>
 
           {/* Chat Window */}
-          <div className="col-span-2 flex flex-col justify-center items-center bg-gray-800">
-            <h2 className="text-2xl font-semibold mb-2">Chatting Area</h2>
-            <p className="text-gray-400">Select a chat to start messaging...</p>
+          <div className="col-span-2">
+            <Chat/>
           </div>
 
           {/* Details Section */}
