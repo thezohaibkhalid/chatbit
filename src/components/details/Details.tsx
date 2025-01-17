@@ -1,9 +1,12 @@
-import React from 'react'
-import UserDetails from "./UserDetails"
+ import UserDetails from "./UserDetails"
+ import SharedPhotos from "./SharedPhotos"
 const Details = () => {
   return (
-    <div>
-        <UserDetails/>
+    <div className='w-full'>
+        <div className='border-b-[1px]'>
+            <UserDetails/>
+        </div>
+        <SharedPhotos/>
     </div>
   )
 }

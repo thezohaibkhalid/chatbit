@@ -1,7 +1,11 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { format } from "date-fns";  
 
 const Messages = () => {
+  const endRef = useRef(null)
+  useEffect(()=>{
+    // endRef.current?.scrollIntoView({behavior:"smooth"})
+  })
    const [messages, setMessages] = useState([
     {
       id: 1,
@@ -111,6 +115,7 @@ const Messages = () => {
             </div>
           </div>
         ))}
+        <div ref={endRef}></div>
       </div>
     </div>
   );

@@ -30,7 +30,7 @@ const App = () => {
           </div>
 
           {/* Details Section */}
-          <div className="col-span-1 bg-gray-900 flex flex-col items-center p-4">
+          <div className="col-span-1 ">
             <Details/>
           </div>
         </div>
