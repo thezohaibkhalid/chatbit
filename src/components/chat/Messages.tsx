@@ -101,6 +101,8 @@ const Messages = () => {
                 }`}
               >
                 <div className="font-semibold">{message.senderName}</div>
+                <div><img className="p-6 h-[300px] w-auto" src="https://gratisography.com/wp-content/uploads/2024/10/gratisography-happy-cone-1170x780.jpg" alt="" /></div>
+
                 <div>{message.content}</div>
                 <div className="text-xs text-gray-300 mt-1">
                   {format(message.timestamp, "hh:mm a")}  

@@ -1,5 +1,6 @@
 import ChatsList from "./components/chats/ChatsList";
 import Chat from "./components/chat/Chat"
+import Details from "./components/details/Details"
 const App = () => {
   const style = {
     backgroundImage:
@@ -30,10 +31,7 @@ const App = () => {
 
           {/* Details Section */}
           <div className="col-span-1 bg-gray-900 flex flex-col items-center p-4">
-            <h2 className="text-xl font-semibold mb-4">Details</h2>
-            <p className="text-gray-400 text-center">
-              View user details, activities, and additional information here.
-            </p>
+            <Details/>
           </div>
         </div>
       </div>
