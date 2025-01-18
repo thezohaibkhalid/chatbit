@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { format } from "date-fns";  
 
 const Messages = () => {
+
   const endRef = useRef(null)
   useEffect(()=>{
     // endRef.current?.scrollIntoView({behavior:"smooth"})
