@@ -7,7 +7,7 @@ const SharedPhotos = () => {
   return (
     <div>
 
-        <div className="flex py-8 px-4 justify-between">
+        <div className="flex py-4 px-4 justify-between">
             <p>Shared Photos</p>
             <div onClick={()=> setOpen((prev) => !prev)} className="flex p-2 rounded-full bg-black/20 items-center justify-center">
                 {open ? (
@@ -21,7 +21,7 @@ const SharedPhotos = () => {
         <div
         className={`transition-all duration-300 ease-in-out overflow-hidden space-y-4 ${
           open
-            ? "max-h-[500px] opacity-100 overflow-y-auto scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-black/20"
+            ? "max-h-[290px] opacity-100 overflow-y-auto scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-black/20"
             : "max-h-0 opacity-0"
         }`}
       >
