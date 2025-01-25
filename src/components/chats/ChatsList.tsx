@@ -47,11 +47,18 @@ const ChatsList = () => {
       {/* Search Section */}
       <div className="flex items-center gap-3 bg-gray-800 p-2 rounded-md">
         <FaSearch className="text-xl text-gray-400" />
-        <input
+        {add ? (
+          <input
+          type="text"
+          placeholder="Enter Username to Add..."
+          className="flex-1 bg-transparent outline-none text-sm text-gray-300 placeholder-gray-500"
+        />
+        ) : (<input
           type="text"
           placeholder="Search by username..."
           className="flex-1 bg-transparent outline-none text-sm text-gray-300 placeholder-gray-500"
-        />
+        />)
+        }
         <div
           onClick={() => setAdd((prev) => !prev)}
           className="cursor-pointer bg-gray-700 p-2 rounded-md hover:bg-gray-600"
