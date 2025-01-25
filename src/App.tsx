@@ -4,7 +4,7 @@ import Details from "./components/details/Details"
 import Login from "./components/login/Login"
 import Noticification from "./components/noticificatation/Noticification"
 const App = () => {
-  const user = false
+  const user = true
   const style = {
     backgroundImage:
       "url('https://media.istockphoto.com/id/1162167657/photo/hand-painted-background-with-mixed-liquid-blue-and-golden-paints-abstract-fluid-acrylic.webp?a=1&b=1&s=612x612&w=0&k=20&c=lnpN1MmAuPG9yB3r5Y9EKrzRIF3siGSK7GZJmipXT14=')",

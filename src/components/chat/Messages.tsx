@@ -6,7 +6,7 @@ const Messages = () => {
   const endRef = useRef(null)
   useEffect(()=>{
     // endRef.current?.scrollIntoView({behavior:"smooth"})
-  })
+  }, [])
    const [messages, setMessages] = useState([
     {
       id: 1,
@@ -83,8 +83,8 @@ const Messages = () => {
   ]);
 
   return (
-    <div className="flex-1 overflow-y-auto scrollbar-thin  scrollbar-thumb-gray-700 scrollbar-track-black/20 p-4">
-      <div className="flex flex-col gap-4 ">
+    <div className="flex-1  overflow-y-auto scrollbar-thin  scrollbar-thumb-gray-700 scrollbar-track-black/20 p-4">
+      <div className="flex flex-1 flex-col gap-4 ">
         {messages.map((message) => (
             //error not found
           <div
