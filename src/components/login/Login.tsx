@@ -1,11 +1,15 @@
 import { useState } from "react";
 import Signup from "./Signup";
-
+import {toast} from "react-toastify"
 const Login = () => {
   const [showSignin, setShowSignin] = useState(false);
 
   if (showSignin) {
     return <Signup />;
+  }
+  const handleLogin = (e)=>{
+    e.preventDefault()
+    toast.warn("Login Button Clicked")
   }
 
   return (
@@ -13,7 +17,7 @@ const Login = () => {
       <h1 className="text-3xl font-extrabold text-gray-200 mb-6">
         Welcome Back
       </h1>
-      <form className="w-full space-y-4">
+      <form onClick={handleLogin} className="w-full space-y-4">
         <input
           type="email"
           placeholder="Email"
